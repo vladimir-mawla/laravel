@@ -27,6 +27,11 @@ class TestController extends Controller{
         $sec = time() + (31536000*238) - (105*864000);
         echo $sec;
     }
+    public function nominate(){
+        $a=["Pablo","Pablo","Pablo","Pablo","Georgio","Nour","Vladimir","Stephanelle","Mohammad","JP","Pablo","Pablo","Pablo"];
+        $nominated=rand(0,count($a)-1);
+        echo $a[$nominated];
+    }
 
 
 
