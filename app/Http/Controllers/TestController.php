@@ -36,15 +36,18 @@ class TestController extends Controller{
         $a = ["Pablo", "Alaa", "Georgio", "Vladimir", "Mohamad", "Hsein", "Tarek", "Nour"];
         $select1=0;
         $select2=0;
+        $obj = (array)$obj;
         while(true){
             $select1 = rand(0, count($a)-1);
             echo json_encode($a[$select1]);
             unset($a[$select1]);
             var_dump($a);
+
             $select2 = rand(0, count($a)-1);
             echo json_encode($a[$select2]);
             unset($a[$select2]);
             var_dump($a);
+            //$obj['team1:'] = "$select1", "$select2";
         }
     }
 
