@@ -9,3 +9,4 @@ Route::get('/bye', [TestController::class, 'sayBye'])->name("say-bye");
 Route::get('/palindrome', [TestController::class, 'palindrome'])->name("palindrome");
 Route::get('/seconds', [TestController::class, 'seconds'])->name("seconds");
 Route::get('/nominate', [TestController::class, 'nominate'])->name("nominate");
+Route::get('/group', [TestController::class, 'group'])->name("group");
