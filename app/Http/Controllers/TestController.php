@@ -23,6 +23,10 @@ class TestController extends Controller{
         };
         echo $number;
     }
+    public function seconds(){
+        $sec = time() + (31536000*238) - (105*864000);
+        echo $sec;
+    }
 
 
 
